@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net7.0</TargetFrameworks>
+    <Copyright>Wojciech Mikołajewicz</Copyright>
+		<Nullable>enable</Nullable>
+		<Title>Interval Helper</Title>
+		<Authors>Wojciech Mikołajewicz</Authors>
+		<PackageProjectUrl>https://github.com/Wojmik/IntervalHelper</PackageProjectUrl>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+	
+	<!--For nullable to work with netstandard2.0-->
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+		<LangVersion>8.0</LangVersion>
+	</PropertyGroup>
+</Project>
